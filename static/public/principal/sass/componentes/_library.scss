@@ -1,0 +1,61 @@
+/* headroom */
+.headroom {
+    transition: transform 0.3s ease;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+/* glider js*/
+
+.wrapper {
+    /* width: 150px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+.wrapper a img {
+    width: 100%;
+    position: relative;
+    border-radius: 5px;
+    margin: 5px;
+    height: 100%;
+}
+.wrapper a {
+    width: 150px;
+    float: left;
+    position: relative;
+    border-radius: 5px;
+    margin: 5px;
+}
+.wrapper a[rel]:hover:before {
+    font-size: 20px;
+}
+.wrapper a[rel]:before {
+    content: attr(rel);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 54, 75, 0.473);
+    color: white;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    transition: all 0.2s;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+/* PRISM JS */
+/* update */
+.line-numbers-rows span {
+    line-height: 24px;
+}

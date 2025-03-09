@@ -1,0 +1,244 @@
+/* ------------------------------------------------------  HEADER MODO CLARO  --------------------------------------------------------------------------------- */
+
+.encabezado {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 30fr 1fr;
+    grid-template-rows: auto;
+    justify-items: stretch;
+    align-items: center;
+    text-align: center;
+    padding: 0.625rem;
+    background: var(--fondo-blanco);
+    height: 70px;
+    position: fixed;
+    top: 0;
+    z-index: 4000;
+}
+
+.logo {
+    width: 38px;
+    border-radius: 50%;
+    border: solid white 2px;
+}
+.menu-ul a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--fondo-negro);
+    opacity: 0.9;
+    padding: 1.25rem;
+    font-size: 0.9375rem;
+}
+.menu-ul a.item:hover {
+    background: rgb(245, 245, 245);
+    opacity: 1;
+    border-bottom: solid rgb(0, 51, 80) 2px;
+}
+.menu-ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+li {
+    list-style: none;
+}
+i.off {
+    color: rgb(255, 145, 0);
+    font-size: 30px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.menu-ul li ul.slide {
+    display: flex;
+    flex-direction: column;
+    background: var(--fondo-blanco);
+    color: white;
+    text-align: left;
+    position: absolute;
+    top: calc(100% + 20px);
+    right: 0;
+    width: 100%;
+    display: none;
+    z-index: 2000;
+}
+.menu-ul li ul.slide li {
+    position: relative;
+}
+.menu-ul li ul.slide li ul {
+    position: absolute;
+    right: -100%;
+    top: 0;
+}
+.menu-ul li ul.slide a {
+    display: block;
+    padding: 10px;
+    border-bottom: solid rgba(0, 51, 80, 0.281) 1px;
+    font-size: 0.8125rem;
+}
+.menu-ul li ul.slide a:hover {
+    background: rgb(255, 255, 255);
+}
+.lista {
+    position: relative;
+}
+li:hover > ul.slide {
+    display: block;
+    z-index: 2000;
+    background: var(--fondo-blanco);
+}
+.menu-icon {
+    display: none !important;
+}
+.name {
+    display: none;
+}
+.mis-cursos {
+    display: none;
+}
+.usuario_name {
+    font-size: 14px;
+    font-weight: 800;
+    color: #000000 !important;
+    margin-right: 13px;
+}
+.dropdown-menu {
+    background: var(--fondo-blanco);
+}
+.subir-arriba {
+    padding: 18px 30px;
+    position: fixed;
+    background: rgba(16, 71, 143, 0.568);
+    bottom: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    display: block;
+    opacity: 0.4;
+    color: white;
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-icon {
+        display: inline !important;
+        font-size: 25px;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+    .div-dark-menu {
+        display: flex;
+        align-items: center;
+    }
+    .encabezado {
+        padding: 0 20px;
+        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu-ul a.item {
+        border-bottom: solid rgb(0, 51, 80) 1px;
+        border-left: solid rgba(255, 255, 255, 0) 3px;
+    }
+    .menu-ul a.item:hover {
+        border-bottom: solid rgb(0, 51, 80) 1px;
+        border-left: solid rgb(0, 153, 255) 3px;
+    }
+    .menu-nav {
+        /* display: none; */
+        position: absolute;
+        background: var(--fondo-blanco);
+        width: 50%; /*update*/
+        left: 0;
+        bottom: 0;
+        top: 70px;
+        height: calc(100vh - 70px);
+        z-index: 3000;
+        left: -80%;
+        transition: all 1s;
+        overflow: auto;
+    }
+    .menu-ul {
+        position: relative;
+        display: block;
+        height: calc(100vh - 70px);
+        bottom: 0;
+        overflow: auto;
+        overscroll-behavior: contain;
+    }
+    /* ::-webkit-scrollbar {
+        width: 7px;
+    }
+     .menu-nav::-webkit-scrollbar-thumb {
+        background: rgba(0, 92, 153, 0.541);
+    } */
+    .menu-ul li a {
+        text-align: left;
+        display: block;
+    }
+
+    .menu-ul li ul.slide {
+        background: var(--fondo-blanco) !important;
+        display: block;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        display: none;
+    }
+    .menu-ul li ul.slide li ul {
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+    }
+    ul.slide li a span {
+        position: relative;
+        left: 50px;
+    }
+    ul.slide li ul.slide li a span {
+        position: relative;
+        left: 100px;
+    }
+    .name {
+        font-size: 15px;
+        display: block;
+        font-weight: normal;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: var(--header-negro);
+        text-shadow: 0 0 2px var(--fondo-negro);
+    }
+    .name a {
+        text-decoration: none;
+    }
+    .mis-cursos {
+        display: block;
+        letter-spacing: 2px;
+        background: #dee9ff;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .usuario_name {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-nav {
+        width: 70%; /*update*/
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .subir-arriba {
+        padding: 8px 20px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .subir-arriba {
+        padding: 8px 20px;
+    }
+}

@@ -1,0 +1,76 @@
+/*  ---------------------------------MODO DARK ---------------------------------*/
+body.dark-active .nombre-curso { text-align: center; background: var(--fondo-texto-negro); padding: 20px; font-weight: normal; color: var(--fondo-texto-blanco); margin-bottom: 0; border-bottom: solid #44566b 1px; }
+
+body.dark-active .proceso { margin-top: 0; width: 100%; background: var(--fondo-texto-negro); display: -ms-grid; display: grid; -ms-grid-columns: (1fr)[12]; grid-template-columns: repeat(12, 1fr); -ms-grid-rows: auto; grid-template-rows: auto; }
+
+body.dark-active .accordion { grid-column: span 3; background: var(--fondo-negro-dark); padding: 20px 10px; }
+
+body.dark-active .descripcion { background: var(--fondo-negro-accordion); padding: 20px; grid-column: span 9; padding: 10px; }
+
+body.dark-active .tabla-contenido { color: var(--fondo-texto-blanco); text-align: center; padding-bottom: 10px; border-bottom: solid var(--fondo-texto-blanco) 1px; }
+
+body.dark-active .class-items { color: var(--fondo-texto-blanco); text-decoration: none; padding: 10px; font-size: 13px; border-bottom: solid rgba(233, 231, 231, 0.267) 1px; }
+
+body.dark-active .class-items:hover { background: rgba(27, 55, 87, 0.555); }
+
+body.dark-active .temas { font-size: 15px; }
+
+body.dark-active .collapse { background: var(--fondo-negro-accordion); }
+
+body.dark-active span { font-size: 14px; }
+
+body.dark-active .programas { color: var(--fondo-texto-blanco); padding: 15px 10px; font-weight: normal; background: #294358; }
+
+body.dark-active .encabezado { background: var(--fondo-negro-dark); }
+
+body.dark-active .content { background: var(--fondo-negro-contenido); color: var(--fondo-blanco-contenido); }
+
+body.dark-active .logo { border: solid white 2px; }
+
+body.dark-active .menu-ul a { color: var(--fondo-blanco-dark); opacity: 0.9; font-weight: normal; }
+
+body.dark-active .menu-ul a.item:hover { background: var(--fondo-header-dark); opacity: 1; border-bottom: solid var(--fondo-header-dark) 2px; }
+
+body.dark-active i.off { color: var(--fondo-blanco-dark); }
+
+body.dark-active i { color: var(--fondo-blanco-dark); }
+
+body.dark-active .menu-ul li ul.slide { background: var(--fondo-negro-dark); color: white; }
+
+body.dark-active .menu-ul li ul.slide a { border-bottom: solid rgba(0, 51, 80, 0.281) 1px; }
+
+body.dark-active .menu-ul li ul.slide a:hover { background: var(--fondo-header-dark); }
+
+body.dark-active li:hover > ul.slide { background: var(--fondo-negro-dark); }
+
+body.dark-active .seccion { background-image: url("../img/main.jpg"); }
+
+body.dark-active .efecto { background: rgba(1, 23, 37, 0.842); }
+
+body.dark-active .name { color: white !important; }
+
+body.dark-active h1 { color: white; background: rgba(0, 0, 0, 0.411); }
+
+body.dark-active .usuario_name { font-weight: normal; color: #ffffff !important; }
+
+body.dark-active .dropdown-menu { background: var(--fondo-negro-dark); }
+
+body.dark-active .dropdown-menu a { color: var(--fondo-blanco-dark); }
+
+body.dark-active .dropdown-menu a:hover { background: var(--fondo-header-dark); }
+
+body.dark-active .subir-arriba { background: rgba(255, 255, 255, 0.329); opacity: 0.4; }
+
+@media screen and (max-width: 1000px) { body.dark-active .menu-ul a.item { border-bottom: solid #003350 1px; border-left: solid rgba(255, 255, 255, 0) 3px; }
+  body.dark-active .menu-ul a.item:hover { border-bottom: solid #003350 1px; border-left: solid #0099ff 3px; }
+  body.dark-active .menu-nav { background: var(--fondo-negro-dark); }
+  body.dark-active .menu-ul li ul.slide { background: var(--fondo-negro-dark) !important; }
+  body.dark-active .name { color: var(--header-negro); text-shadow: 0 0 2px var(--fondo-negro-dark); }
+  body.dark-active .mis-cursos { background: #0c2533; color: white; } }
+
+@media screen and (max-width: 900px) { body.dark-active .accordion { grid-column: span 4; }
+  body.dark-active .descripcion { grid-column: span 8; } }
+
+@media screen and (max-width: 600px) { body.dark-active .accordion { grid-column: span 12; }
+  body.dark-active .descripcion { grid-column: span 12; } }
+/*# sourceMappingURL=mode_dark.css.map */

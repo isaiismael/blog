@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "Poppins";
+}
+section:target .programas {
+  background: rgb(255, 91, 91);
+}
+body.dark-active section:target .programas {
+  background: rgb(255, 91, 91);
+}
+
+
+
+@import "componentes/colores";
+@import "componentes/header";
+@import "componentes/sidebar";
+@import "componentes/section";
+@import "componentes/library";

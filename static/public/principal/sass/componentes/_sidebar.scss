@@ -1,0 +1,108 @@
+/*  ---------------------------------MODO CLARO SIDEBAR---------------------------------*/
+button.btn-primary {
+    padding: 8px 0;
+}
+.nombre-curso {
+    text-align: center;
+    background: var(--fondo-texto-blanco);
+    padding: 20px;
+    font-weight: normal;
+    color: var(--fondo-texto-negro);
+    margin-bottom: 0;
+    border-bottom: solid rgb(68, 86, 107) 1px;
+}
+
+.proceso {
+    margin-top: 0;
+    width: 100%;
+    background: var(--fondo-texto-blanco);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
+}
+.accordion {
+    overflow-y: auto;
+    grid-column: span 3;
+    background: var(--fondo-acordion-blanco);
+    padding: 20px 10px;
+}
+
+.descripcion {
+    background: var(--fondo-texto-blanco);
+    padding: 20px;
+    grid-column: span 9;
+    padding: 10px;
+}
+.tabla-contenido {
+    color: var(--fondo-texto-negro);
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: solid var(--fondo-texto-blanco) 1px;
+    text-transform: uppercase;
+}
+.class-items {
+    color: var(--fondo-texto-negro);
+    text-decoration: none !important;
+    padding: 10px;
+    font-size: 13px;
+    border-bottom: solid rgba(12, 29, 59, 0.5) 1px;
+}
+.class-items:hover {
+    background: rgba(0, 0, 0, 0.123);
+}
+.temas {
+    font-size: 15px;
+}
+
+.collapse {
+    background: var(--fondo-texto-blanco);
+}
+span {
+    font-size: 14px;
+}
+.programas {
+    color: var(--fondo-texto-negro);
+    padding: 15px 10px;
+    font-weight: bold;
+    background: var(--fondo-acordion-blanco);
+}
+@media screen and (max-width: 900px) {
+    .accordion {
+        grid-column: span 4;
+    }
+
+    .descripcion {
+        grid-column: span 8;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .accordion {
+        grid-column: span 12;
+    }
+
+    .descripcion {
+        grid-column: span 12;
+    }
+}
+ol {
+    margin: 0;
+}
+ol li {
+    list-style-type: decimal !important;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.img-conexion {
+    overflow-x: auto;
+    border-radius: 5px;
+}
+.texto {
+    margin-bottom: 10px;
+    padding: 0 0px 0 20px;
+    overflow: hidden;
+}
+.ejercicio {
+    background: rgb(145, 142, 0);
+}

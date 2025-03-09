@@ -1,0 +1,104 @@
+/*  ---------------------------------MODO CLARO SECTION---------------------------------*/
+.content {
+    padding: 0px 0px 0px 0px;
+    background: var(--fondo-blanco-contenido);
+    color: var(--fondo-negro-contenido);
+    /* min-height: 100vh;
+    max-height: 100%; */
+    height: calc(100vh - 70px);
+    position: relative;
+    /* overflow-y: scroll; */
+    top: 70px;
+}
+
+.seccion {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background-image: url("../img/main.jpg");
+    background-size: cover;
+    opacity: 0.4;
+    filter: blur(1px);
+    z-index: 1000;
+}
+
+.efecto {
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(1, 23, 37, 0.664);
+    position: absolute;
+    z-index: 2000;
+}
+
+h1 {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    height: calc(100%);
+    top: 0px;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    letter-spacing: 15px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.411);
+    z-index: 3000;
+}
+
+table thead {
+    background: rgb(10, 111, 129);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    line-height: 50px;
+}
+table tbody tr {
+    line-height: 40px;
+}
+table tbody tr td {
+    padding-left: 30px !important;
+}
+table tbody tr td:first-child {
+    font-size: 14px!important;
+}
+table tbody tr:hover {
+    /* background: rgb(255, 255, 255); */
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+.texto {
+    margin-bottom: 10px;
+    padding: 0 0px 0 20px;
+    overflow: hidden;
+}
+@media screen and (max-width: 1000px) {
+    .seccion {
+        background-image: url("../img/main.jpg");
+        background-position: center;
+        z-index: 1000;
+    }
+    .small {
+        filter: blur(5px);
+        // visibility: hidden;
+    } /*update */
+}
+@media screen and (max-width: 765px) {
+    h1 {
+        letter-spacing: 10px;
+        font-size: 38px;
+    }
+}
+@media screen and (max-width: 540px) {
+    h1 {
+        letter-spacing: 10px;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 400px) {
+    h1 {
+        letter-spacing: 10px;
+        font-size: 20px;
+    }
+}
