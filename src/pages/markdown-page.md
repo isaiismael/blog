@@ -1,9 +1,26 @@
 ---
-title: Markdown page example
+title: Ejemplo de Página Markdown
 ---
 
-# Markdown page example
+# Ejemplo de Página Markdown
 
-You don't need React to write simple standalone pages.
+Las páginas de Markdown son perfectas para contenido estático sencillo.
 
-# Hola mundo
+## Ventajas
+
+- No requiere conocimientos de React
+- Fácil de editar y mantener
+- Ideal para documentación simple
+
+## Ejemplo de código
+
+```javascript
+// Un ejemplo de código JavaScript
+function saludar() {
+  console.log('¡Hola mundo!');
+}
+```
+
+---
+
+¡Puedes personalizar esta página como quieras!
